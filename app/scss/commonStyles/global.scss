@@ -1,0 +1,88 @@
+@include font("europa-reg", "europenormal", "400", "normal");
+@include font("europa-bold", "europebold", "700", "normal");
+
+// h1 - font size - 48px
+// h2 - font size - 44px
+// h3 - font size - 36px
+// h4 - font size - 28px
+// h5 - font size - 18px
+
+body {
+  font-family: "europa-reg", sans-serif;
+}
+.container {
+  max-width: 1138px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  transition: 0.3s all ease;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  background: $redColor;
+  border-radius: 6px;
+  color: #ffffff;
+  display: inline-block;
+  &:hover {
+    background: #d60b3e;
+  }
+}
+.btn-outline {
+  transition: 0.3s all ease;
+  padding: 14px 32px;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  border-radius: 6px;
+  color: $redColor;
+  border: 1px solid $redColor;
+  font-weight: 700;
+  &:hover {
+    background: #d60b3e;
+    color: #ffffff;
+  }
+}
+.title-h1 {
+  // font-family: "europa-bold", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 129%;
+  color: $blueColor;
+}
+@media (max-width: 899.999px) {
+  .btn {
+    padding: 12px 26px;
+  }
+  .btn-outline {
+    padding: 12px 26px;
+  }
+  .title-h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 779.999px) {
+  .title-h1 {
+    // font-size: 28px;
+  }
+}
+@media (max-width: 499.999px) {
+  .title-h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 399.999px) {
+  .title-h1 {
+  }
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .btn-outline {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

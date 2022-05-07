@@ -1,0 +1,125 @@
+.menu {
+  &__btn-burger {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin-left: 60px;
+    font-size: 18px;
+    line-height: 22px;
+    &:last-child {
+      .menu__link {
+        color: #ffffff;
+      }
+    }
+  }
+  &__link {
+    color: #646a89;
+    transition: 0.3s color ease;
+    &:hover {
+      color: #d60b3e;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .menu {
+    &__item {
+      margin-left: 35px;
+    }
+  }
+}
+@media (max-width: 779.999px) {
+  .menu {
+    &__btn-burger {
+      transition: all 0.3s ease;
+      display: block;
+      width: 30px;
+      height: 18px;
+      position: relative;
+      cursor: pointer;
+      & button,
+      &::before,
+      &::after {
+        position: absolute;
+        left: 0;
+        height: 1.8px;
+        width: 100%;
+        background-color: #000;
+        z-index: 10;
+      }
+      &::before,
+      &::after {
+        transition: all 0.3s ease;
+        content: "";
+      }
+      & button {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+    }
+    &__btn-burger._active {
+      & button {
+        top: 50%;
+        transform: scale(0) translate(0px, -50%);
+        background-color: #fff;
+      }
+      &::before {
+        top: 50%;
+        transform: rotate(-45deg) translateY(-50%);
+        background-color: #fff;
+      }
+      &::after {
+        bottom: 50%;
+        transform: rotate(45deg) translateY(50%);
+        background-color: #fff;
+      }
+    }
+    &__body {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      left: -103%;
+      right: 0;
+      z-index: 8;
+      top: 0;
+      bottom: 0;
+      overflow: auto;
+      padding: 120px 20px 40px 20px;
+      transition: all 0.3s ease;
+      &._active {
+        left: 0;
+      }
+    }
+    &__item {
+      margin-left: 0;
+      &:last-child {
+        .menu__link {
+          background: none;
+          padding: 0;
+        }
+      }
+    }
+    .menu__link {
+      color: #fff;
+      font-size: 20px;
+      svg {
+        display: none;
+      }
+    }
+    &__list {
+      flex-direction: column;
+      gap: 50px 0;
+      justify-content: center;
+    }
+  }
+}
