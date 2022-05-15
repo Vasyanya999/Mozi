@@ -1,9 +1,6 @@
 .hero__wrapper {
   background: linear-gradient(252.91deg, #e3e7f6 3.68%, rgba(227, 231, 246, 0) 97.82%);
 }
-.section__hero {
-  margin-top: 73px;
-}
 .hero {
   position: relative;
   display: flex;
@@ -75,9 +72,6 @@
   }
 }
 @media (max-width: 989.999px) {
-  .section__hero {
-    margin-top: 40px;
-  }
   .hero {
     &__body {
       padding: 0 0 370px 0;
@@ -90,9 +84,6 @@
   }
 }
 @media (max-width: 499.999px) {
-  .section__hero {
-    margin-top: 30px;
-  }
   .hero {
     text-align: center;
     &__text {
@@ -114,9 +105,6 @@
   }
 }
 @media (max-width: 399.999px) {
-  .section__hero {
-    margin-top: 20px;
-  }
   .hero {
     &__text {
       font-size: 16px;

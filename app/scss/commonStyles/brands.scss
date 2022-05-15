@@ -1,0 +1,44 @@
+.brands {
+  &__title {
+    text-align: center;
+
+    span {
+      color: $redColor;
+    }
+  }
+
+  &__row {
+    display: flex;
+    margin-top: 80px;
+    padding: 0 28px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+  }
+}
+@media (max-width: 989.999px) {
+  .brands {
+    &__row {
+      margin-top: 40px;
+      padding: 0 0;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    &__image {
+      // flex: 0 1 15%;
+      // text-align: center;
+    }
+  }
+}
+@media (max-width: 799.999px) {
+  .brands {
+    &__row {
+    }
+    &__image {
+      // flex: 0 1 20%;
+    }
+  }
+}
