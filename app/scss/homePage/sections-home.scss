@@ -4,12 +4,20 @@
 .section__home-brands {
   margin-top: 101px;
 }
-.section__home-caption {
+.section__first-caption-home {
   margin-top: 234px;
 }
 .section__home-our-line {
   margin-top: 97px;
-  padding-bottom: 200px;
+}
+.section__home-creators {
+  margin-top: 108px;
+}
+.section__second-caption-home {
+  margin-top: 120px;
+}
+.section__slider-home {
+  margin-top: 113px;
 }
 @media (max-width: 989.999px) {
   .section__home-hero {
@@ -24,6 +32,15 @@
   .section__home-our-line {
     margin-top: 50px;
   }
+  .section__home-creators {
+    margin-top: 60px;
+  }
+  .section__second-caption-home {
+    margin-top: 60px;
+  }
+  .section__slider-home {
+    margin-top: 83px;
+  }
 }
 @media (max-width: 499.999px) {
   .section__home-hero {
@@ -34,6 +51,15 @@
   }
   .section__home-our-line {
     margin-top: 30px;
+  }
+  .section__home-creators {
+    margin-top: 40px;
+  }
+  .section__second-caption-home {
+    margin-top: 30px;
+  }
+  .section__slider-home {
+    margin-top: 43px;
   }
 }
 @media (max-width: 399.999px) {

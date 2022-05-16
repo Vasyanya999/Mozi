@@ -27,6 +27,7 @@ body {
   border-radius: 6px;
   color: #ffffff;
   display: inline-block;
+  cursor: pointer;
   &:hover {
     background: #d60b3e;
   }
@@ -42,6 +43,7 @@ body {
   border: 1px solid $redColor;
   font-weight: 700;
   display: inline-block;
+  cursor: pointer;
   &:hover {
     background: #d60b3e;
     color: #ffffff;
@@ -78,7 +80,7 @@ body {
   .title-h1 {
     font-size: 36px;
   }
-  .title-h1 {
+  .title-h2 {
     font-size: 32px;
   }
   .title-h3 {
