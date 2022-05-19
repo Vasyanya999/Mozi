@@ -1,0 +1,32 @@
+.slider {
+  &__body {
+  }
+
+  &__window {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #000;
+  }
+
+  &__content {
+    width: 200%;
+    border: 1px solid #000;
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__elem {
+    width: 25%;
+    border: 1px solid rgb(255, 0, 0);
+    height: 119px;
+  }
+
+  &__novigation {
+  }
+
+  &__arrow-left {
+  }
+
+  &__arrow-right {
+  }
+}
